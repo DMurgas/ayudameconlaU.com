@@ -1,0 +1,84 @@
+/* Página Beneficios: estilos encapsulados para convivir con general.css */
+:root{--ben-dark:#0D3B66;--ben-blue:#2E86EB;--ben-light:#A7D8FF;--ben-teal:#14B8A6;--ben-white:#FFFFFF;--ben-gray:#F4F6F8;--ben-text:#26394a;--ben-muted:#617285;--ben-border:#e1e9f1}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{margin:0;color:var(--ben-text);font-family:'Open Sans',sans-serif;background:#fff;line-height:1.65}
+.beneficios-container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+.beneficios-header-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:86px}
+.site-header{background:#fff;border-bottom:1px solid var(--ben-border);position:relative;z-index:2}
+.beneficios-brand{display:flex;align-items:center;gap:12px;color:var(--ben-dark);text-decoration:none;min-width:220px}
+.beneficios-brand img{width:50px;height:50px;object-fit:contain}
+.beneficios-brand strong,.beneficios-brand small{display:block;line-height:1.3}
+.beneficios-brand strong{font-family:Montserrat,sans-serif;font-size:17px;letter-spacing:-.5px}
+.beneficios-brand small{font-size:11px;color:var(--ben-muted);margin-top:3px}
+.beneficios-nav{display:flex;align-items:center;gap:17px;flex-wrap:wrap}
+.beneficios-nav a{font-size:12px;font-weight:700;color:var(--ben-dark);text-decoration:none;transition:color .2s}
+.beneficios-nav a:hover,.beneficios-nav a[aria-current="page"]{color:var(--ben-blue)}
+.beneficios-nav a[aria-current="page"]{border-bottom:2px solid var(--ben-teal);padding-bottom:5px}
+.beneficios-hero{padding:58px 0 80px;background:linear-gradient(120deg,#0D3B66 0%,#165c9c 62%,#207cb4 100%);color:white;position:relative;overflow:hidden}
+.beneficios-hero:after{content:"";position:absolute;right:-150px;top:-180px;width:540px;height:540px;border:75px solid rgba(167,216,255,.09);border-radius:50%;pointer-events:none}
+.beneficios-hero .beneficios-container{position:relative;z-index:1}
+.beneficios-breadcrumb{font-size:13px;margin:0 0 44px;color:#d9eaf9}
+.beneficios-breadcrumb a{color:#fff;text-decoration:none}
+.beneficios-breadcrumb span{margin:0 8px}
+.beneficios-eyebrow,.beneficios-kicker{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--ben-teal)}
+.beneficios-hero .beneficios-eyebrow{color:#7ef1e0}
+.beneficios-hero h1{font:800 clamp(30px,4.5vw,53px)/1.15 Montserrat,sans-serif;max-width:780px;letter-spacing:-1.5px;margin:18px 0}
+.beneficios-hero p:not(.beneficios-breadcrumb){max-width:710px;color:#e2effb;font-size:16px;margin-bottom:28px}
+.beneficios-primary-btn,.beneficios-secondary-btn{display:inline-flex;align-items:center;gap:14px;padding:12px 23px;border-radius:9px;font-weight:700;text-decoration:none;transition:transform .2s,background .2s}
+.beneficios-primary-btn{background:var(--ben-teal);color:#063f3c}
+.beneficios-primary-btn:hover,.beneficios-secondary-btn:hover{transform:translateY(-2px)}
+.beneficios-intro{display:flex;align-items:center;gap:20px;padding:25px 30px;margin-top:-32px;margin-bottom:65px;background:#fff;border:1px solid var(--ben-border);border-left:5px solid var(--ben-teal);border-radius:14px;box-shadow:0 12px 34px rgba(13,59,102,.09);position:relative;z-index:1}
+.beneficios-intro-icon{flex:0 0 46px;height:46px;display:grid;place-items:center;border-radius:50%;background:#ddf8f3;color:#0b8579;font-size:26px;font-weight:700}
+.beneficios-intro h2{font:700 17px Montserrat,sans-serif;color:var(--ben-dark);margin:0 0 6px}
+.beneficios-intro p{font-size:13px;color:var(--ben-muted);margin:0}
+.beneficios-categorias{padding-bottom:75px}
+.beneficios-section-heading{text-align:center;margin-bottom:30px}
+.beneficios-section-heading-left{text-align:left}
+.beneficios-section-heading h2,.beneficios-reminder h2{font:800 clamp(25px,3vw,34px)/1.2 Montserrat,sans-serif;color:var(--ben-dark);margin:10px 0}
+.beneficios-section-heading p{color:var(--ben-muted);margin:0;font-size:15px}
+.beneficios-category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.beneficios-category{border:1px solid var(--ben-border);background:#fff;border-radius:14px;padding:27px 20px;text-align:center;text-decoration:none;box-shadow:0 6px 20px rgba(13,59,102,.04);transition:transform .2s,box-shadow .2s,border-color .2s}
+.beneficios-category:hover{transform:translateY(-4px);border-color:var(--ben-light);box-shadow:0 12px 28px rgba(13,59,102,.1)}
+.beneficios-category>span{display:block;font-size:34px;margin-bottom:12px}
+.beneficios-category strong,.beneficios-category small{display:block}
+.beneficios-category strong{font:700 15px Montserrat,sans-serif;color:var(--ben-dark)}
+.beneficios-category small{font-size:12px;color:var(--ben-muted);margin-top:7px}
+.beneficios-section{padding:77px 0}
+.beneficios-section-alt{background:var(--ben-gray)}
+.beneficios-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.beneficios-card{background:#fff;border:1px solid var(--ben-border);border-radius:15px;padding:24px;display:flex;flex-direction:column;min-height:315px;box-shadow:0 5px 17px rgba(13,59,102,.035)}
+.beneficios-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:20px}
+.beneficios-card-icon{width:45px;height:45px;border-radius:12px;display:grid;place-items:center;background:#eaf4ff;color:var(--ben-blue);font-size:24px;font-weight:800}
+.beneficios-badge{display:inline-block;border-radius:30px;padding:5px 10px;font-size:10px;font-weight:800;line-height:1.35;text-align:center}
+.beneficios-badge-check{background:#e4f7f2;color:#087b6f}
+.beneficios-badge-highlight{background:#e6f1ff;color:#155d9f}
+.beneficios-badge-warning{background:#fff1d9;color:#96600d}
+.beneficios-card h3,.beneficios-feature h3,.beneficios-pending h3{font:700 19px/1.35 Montserrat,sans-serif;color:var(--ben-dark);margin:0 0 11px}
+.beneficios-card p{font-size:13px;color:var(--ben-text);margin:0 0 14px}
+.beneficios-card .beneficios-detail{font-size:12px;color:var(--ben-muted);margin-bottom:20px}
+.beneficios-card a,.beneficios-feature a{color:#116bb8;text-decoration:none;font-weight:800;font-size:13px;margin-top:auto}
+.beneficios-card a:hover,.beneficios-feature a:hover{text-decoration:underline}
+.beneficios-feature{display:flex;align-items:center;gap:27px;padding:30px;background:#fff;border:1px solid var(--ben-border);border-radius:15px;box-shadow:0 8px 25px rgba(13,59,102,.05)}
+.beneficios-feature-symbol{flex:0 0 110px;width:110px;height:110px;border-radius:18px;background:#eaf4ff;display:grid;place-items:center;font-size:51px}
+.beneficios-feature h3{margin-top:12px}
+.beneficios-feature p,.beneficios-pending p{font-size:14px;color:var(--ben-muted);margin:0 0 13px}
+.beneficios-note{font-size:13px;color:var(--ben-muted);margin-top:18px}
+.beneficios-pending{display:flex;gap:22px;padding:32px;border:1px dashed #9abbd9;border-radius:15px;background:#fff}
+.beneficios-pending-icon{font-size:42px}
+.beneficios-pending p:last-child{margin-bottom:0}
+.beneficios-ues-grid .beneficios-card{min-height:295px}
+.beneficios-reminder{display:flex;justify-content:space-between;align-items:center;gap:35px;background:#eaf5ff;border-radius:18px;padding:36px 42px;margin-top:15px;margin-bottom:75px}
+.beneficios-reminder>div{max-width:790px}
+.beneficios-reminder h2{font-size:25px}
+.beneficios-reminder p{font-size:13px;color:var(--ben-muted);margin:0}
+.beneficios-secondary-btn{background:var(--ben-dark);color:#fff;white-space:nowrap}
+.beneficios-footer{background:var(--ben-dark);color:#fff;padding:40px 0 17px}
+.beneficios-footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:start}
+.beneficios-footer strong{font:700 19px Montserrat,sans-serif}
+.beneficios-footer p{color:#c3d8eb;margin:5px 0}
+.beneficios-footer nav{display:flex;gap:22px;flex-wrap:wrap}
+.beneficios-footer nav a{color:#d6e7f5;text-decoration:none;font-size:13px}
+.beneficios-footer nav a:hover{text-decoration:underline}
+.beneficios-footer-copy{text-align:center;font-size:11px;border-top:1px solid rgba(255,255,255,.13);padding-top:17px;margin:30px auto 0!important;width:min(1160px,calc(100% - 40px))}
+@media(max-width:1000px){.beneficios-header-inner{flex-direction:column;padding:15px 0}.beneficios-nav{justify-content:center}.beneficios-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.beneficios-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.beneficios-container{width:min(100% - 28px,1160px)}.beneficios-brand{min-width:0}.beneficios-nav{gap:12px}.beneficios-nav a{font-size:11px}.beneficios-hero{padding:32px 0 65px}.beneficios-breadcrumb{margin-bottom:28px}.beneficios-intro{align-items:flex-start;padding:18px;margin-bottom:45px}.beneficios-category-grid,.beneficios-card-grid{grid-template-columns:1fr}.beneficios-section{padding:55px 0}.beneficios-categorias{padding-bottom:50px}.beneficios-feature{flex-direction:column;align-items:flex-start;padding:23px}.beneficios-feature-symbol{flex-basis:auto;width:80px;height:80px;font-size:37px}.beneficios-pending{padding:23px;flex-direction:column}.beneficios-reminder{flex-direction:column;align-items:flex-start;padding:25px;margin-bottom:50px}.beneficios-footer-inner{flex-direction:column}}
