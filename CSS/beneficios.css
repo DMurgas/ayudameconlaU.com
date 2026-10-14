@@ -1,8 +1,9 @@
-/* Página Beneficios: estilos encapsulados para convivir con general.css */
+
 :root{--ben-dark:#0D3B66;--ben-blue:#2E86EB;--ben-light:#A7D8FF;--ben-teal:#14B8A6;--ben-white:#FFFFFF;--ben-gray:#F4F6F8;--ben-text:#26394a;--ben-muted:#617285;--ben-border:#e1e9f1}
 html{scroll-behavior:smooth;scroll-padding-top:95px}
 body{margin:0;color:var(--ben-text);font-family:'Open Sans',sans-serif;background:#fff;line-height:1.65}
 .beneficios-container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+.beneficios-container h1{color: #14B8A6;}
 .beneficios-header-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:86px}
 .site-header{background:#fff;border-bottom:1px solid var(--ben-border);position:relative;z-index:2}
 .beneficios-brand{display:flex;align-items:center;gap:12px;color:var(--ben-dark);text-decoration:none;min-width:220px}

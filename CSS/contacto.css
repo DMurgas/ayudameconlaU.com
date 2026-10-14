@@ -1,7 +1,3 @@
-/* =========================================
-   CONTACTO - AYUDAMECONLAU.COM
-   Identidad visual del proyecto
-   ========================================= */
 
 .contact-header,
 .contact-page,
@@ -73,11 +69,6 @@
     color: #2E86EB;
 }
 
-
-/* =========================================
-   HERO
-   ========================================= */
-
 .contact-hero {
     min-height: 430px;
     padding: 70px 7%;
@@ -108,13 +99,14 @@
 }
 
 .contact-hero .contact-eyebrow {
-    color: #A7D8FF;
+    color: #14B8A6;
 }
 
 .contact-hero h1 {
     margin: 0 0 22px;
     font-family: "Montserrat", sans-serif;
     font-size: clamp(2.6rem, 5vw, 4.2rem);
+    color: #14B8A6;
     line-height: 1.1;
     font-weight: 800;
 }
@@ -145,9 +137,6 @@
     background: #0e9e90;
     transform: translateY(-3px);
 }
-
-
-/* Elementos decorativos del hero */
 
 .contact-hero-decoration {
     min-height: 280px;
@@ -198,11 +187,6 @@
     font-size: 1.8rem;
 }
 
-
-/* =========================================
-   ENCABEZADOS DE SECCIÓN
-   ========================================= */
-
 .contact-section-heading {
     max-width: 760px;
     margin: 0 auto 42px;
@@ -226,11 +210,6 @@
     font-size: 1rem;
     line-height: 1.8;
 }
-
-
-/* =========================================
-   REDES SOCIALES
-   ========================================= */
 
 .contact-social-section {
     padding: 85px 7%;
@@ -328,11 +307,6 @@
     line-height: 1.8;
 }
 
-
-/* =========================================
-   SOBRE NOSOTROS
-   ========================================= */
-
 .contact-about-section {
     padding: 90px 7%;
     background: #ffffff;
@@ -385,11 +359,6 @@
     font-size: 0.97rem;
     line-height: 1.9;
 }
-
-
-/* =========================================
-   MISIÓN Y VISIÓN
-   ========================================= */
 
 .contact-purpose-section {
     padding: 85px 7%;
@@ -451,11 +420,6 @@
     font-size: 0.96rem;
     line-height: 1.9;
 }
-
-
-/* =========================================
-   EQUIPO
-   ========================================= */
 
 .contact-team-section {
     padding: 90px 7%;
@@ -532,11 +496,6 @@
     text-align: center;
 }
 
-
-/* =========================================
-   CIERRE
-   ========================================= */
-
 .contact-closing-section {
     padding: 75px 7%;
     background: linear-gradient(135deg, #0D3B66, #15558e);
@@ -560,11 +519,6 @@
 .contact-closing-button {
     background: #14B8A6;
 }
-
-
-/* =========================================
-   PIE DE PÁGINA
-   ========================================= */
 
 .contact-footer {
     background: #092d4e;
@@ -623,11 +577,6 @@
     font-size: 0.84rem;
     line-height: 1.7;
 }
-
-
-/* =========================================
-   RESPONSIVE
-   ========================================= */
 
 @media (max-width: 1000px) {
 
