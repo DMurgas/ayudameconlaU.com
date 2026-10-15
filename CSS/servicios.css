@@ -257,7 +257,149 @@ h1 span, h2 span, .ues-copy h2 span { color: #14B8A6; }
 @media (max-width: 850px) { .official-photo-credit { margin: -18px 0 0; } }
 
 
+/* ===== AJUSTES FINALES: ESPACIOS E IMÁGENES ===== */
 
+/* Reducir espacios verticales entre las secciones principales */
+.section {
+  padding-top: 56px;
+  padding-bottom: 58px;
+}
 
+.ues-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
 
+.tips-section {
+  padding-top: 54px;
+  padding-bottom: 58px;
+}
 
+.sports-band {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.tips-section .section-heading {
+  margin-bottom: 24px;
+}
+
+/* Hacer más altos los contenedores de imágenes de las tarjetas */
+.card-image {
+  height: 285px;
+}
+
+/* Mantener las fotografías llenando el contenedor */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* El logo de la librería debe verse completo, sin recortarse */
+.card-image img[alt*="Cuadernos"],
+.card-image img[alt*="Librería"],
+.card-image img[alt*="librería"] {
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
+  background: #ffffff;
+}
+
+/* Dar más espacio a la fotografía del Polideportivo */
+.sports-layout {
+  gap: 38px;
+}
+
+.sports-photo {
+  height: 440px;
+}
+
+.sports-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Evitar márgenes que provoquen huecos o solapamientos */
+.official-photo-credit {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/* Ajustes para tabletas */
+@media (max-width: 850px) {
+  .section {
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+
+  .ues-section,
+  .tips-section {
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+
+  .sports-band {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .sports-layout {
+    gap: 24px;
+  }
+
+  .sports-photo {
+    height: 360px;
+  }
+
+  .card-image {
+    height: 270px;
+  }
+
+  .official-photo-credit {
+    margin-top: 8px;
+  }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  .section {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+
+  .ues-section,
+  .tips-section {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+
+  .sports-band {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .section-heading,
+  .tips-section .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .card-image {
+    height: 250px;
+  }
+
+  .sports-photo {
+    height: 290px;
+  }
+
+  .sports-layout {
+    gap: 20px;
+  }
+}
