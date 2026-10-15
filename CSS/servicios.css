@@ -255,3 +255,55 @@ h1 span, h2 span, .ues-copy h2 span { color: #14B8A6; }
 }
 .official-photo-credit a { color: #2E86EB; font-weight: 700; text-decoration: underline; }
 @media (max-width: 850px) { .official-photo-credit { margin: -18px 0 0; } }
+
+
+
+
+
+
+/* Reducir espacios entre las secciones */
+section {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Reducir el espacio entre el título y las tarjetas */
+.section-heading {
+  margin-bottom: 24px;
+}
+
+/* Reducir espacios dentro de la sección deportiva */
+.sports-band {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.sports-layout {
+  gap: 28px;
+}
+
+/* Reducir espacios en la sección de consejos */
+.tips-section {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .sports-band,
+  .tips-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .sports-layout {
+    gap: 20px;
+  }
+}
