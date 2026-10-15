@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 ? "Se encontró 1 recurso educativo."
                 : "Se encontraron " + cantidadVisibles +
                   " recursos educativos.";
-        
         mensajeSinResultados.hidden = cantidadVisibles !== 0;
     }
     function limpiarFiltros() {
@@ -97,8 +96,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 filtroCarrera.value = carrera;
             });
         });
-
-    // Mostrar todos los recursos al abrir la página
     filtrarRecursos();
-
 });
