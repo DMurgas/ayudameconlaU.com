@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Herramientas de inteligencia artificial para estudiantes de la UES: explicar temas, estudiar documentos, crear presentaciones, practicar para exámenes y organizar el estudio.">
+  <meta name="keywords" content="IA para estudiar, inteligencia artificial para estudiantes, herramientas de IA, ChatGPT para estudiar, Gemini, Claude, NotebookLM, Gamma, Quizlet, Canva, UES">
+  <meta name="author" content="AyudameconlaU.com">
+  <meta name="theme-color" content="#0D3B66">
+  <title>IA para estudiar | Herramientas para estudiantes UES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/ia.css">
+  <script src="../JS/ia.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="AyudameconlaU.com, inicio">
+        <span class="brand-mark" aria-hidden="true">📚</span>
+        <span class="brand-copy">
+          <strong>Ayúdame con la U</strong>
+          <small>Tu aliado en cada paso</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a class="active" href="ia.html" aria-current="page">IA para estudiar</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="beneficios.html">Promociones</a>
+        <a href="servicios.html">Servicios</a>
+        <a class="contact-link" href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> ESTUDIA CON TECNOLOGÍA</span>
+        <h1>IA para estudiar.<br><span>Aprende mejor.</span></h1>
+        <p class="hero-text">Encuentra herramientas de inteligencia artificial para comprender temas, resumir documentos, crear materiales, practicar para exámenes y organizar tu estudio.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#herramientas">Explorar herramientas <span aria-hidden="true">→</span></a>
+          <a class="btn btn-secondary" href="#comparativa">Ver comparativa</a>
+        </div>
+        <p class="hero-note">Pensado para estudiantes de la Universidad de El Salvador.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="ai-card-main">
+          <div class="ai-icon">✦</div>
+          <div>
+            <strong>Inteligencia artificial</strong>
+            <span>Apoyo para estudiar y practicar</span>
+          </div>
+        </div>
+        <div class="float-card card-top">🧠 <span>Comprende temas</span></div>
+        <div class="float-card card-bottom">✓ <span>Estudia a tu ritmo</span></div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="necesidades">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">¿QUÉ NECESITAS HOY?</span>
+          <h2>Elige tu objetivo y encuentra la herramienta adecuada.</h2>
+          <p>No todas las herramientas sirven para lo mismo. Esta guía las relaciona con tareas académicas concretas.</p>
+        </div>
+
+        <div class="need-grid">
+          <button class="need-card" data-recommend="explicar" type="button">
+            <span class="need-icon">🧠</span>
+            <strong>No entiendo un tema</strong>
+            <small>Explicaciones, ejemplos y dudas.</small>
+          </button>
+          <button class="need-card" data-recommend="documentos" type="button">
+            <span class="need-icon">📄</span>
+            <strong>Tengo un PDF o apuntes</strong>
+            <small>Resumir, preguntar y estudiar fuentes.</small>
+          </button>
+          <button class="need-card" data-recommend="presentar" type="button">
+            <span class="need-icon">📊</span>
+            <strong>Necesito una presentación</strong>
+            <small>Crear diapositivas y material visual.</small>
+          </button>
+          <button class="need-card" data-recommend="examinar" type="button">
+            <span class="need-icon">🎯</span>
+            <strong>Tengo un examen</strong>
+            <small>Practicar, repasar y generar preguntas.</small>
+          </button>
+          <button class="need-card" data-recommend="organizar" type="button">
+            <span class="need-icon">🗓️</span>
+            <strong>Necesito organizarme</strong>
+            <small>Planificar tareas y sesiones de estudio.</small>
+          </button>
+        </div>
+
+        <div class="recommendation" id="recommendation" hidden aria-live="polite">
+          <div>
+            <span class="recommendation-kicker">RECOMENDACIÓN</span>
+            <h3 id="recommendation-title">—</h3>
+            <p id="recommendation-text">—</p>
+          </div>
+          <a class="btn btn-primary btn-small" id="recommendation-link" href="#herramientas">Ver herramientas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="herramientas">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="section-kicker">HERRAMIENTAS</span>
+            <h2>Una herramienta para cada necesidad académica.</h2>
+          </div>
+          <div class="tool-search-wrap">
+            <label for="toolSearch">Buscar herramienta</label>
+            <input id="toolSearch" type="search" placeholder="Ej. PDF, examen, presentación..." autocomplete="off">
+          </div>
+        </div>
+
+        <div class="filter-row" aria-label="Filtrar herramientas">
+          <button class="filter-btn active" data-filter="all" type="button">Todas</button>
+          <button class="filter-btn" data-filter="explicar" type="button">Explicar</button>
+          <button class="filter-btn" data-filter="documentos" type="button">Documentos</button>
+          <button class="filter-btn" data-filter="presentar" type="button">Presentaciones</button>
+          <button class="filter-btn" data-filter="examinar" type="button">Exámenes</button>
+          <button class="filter-btn" data-filter="organizar" type="button">Organización</button>
+        </div>
+
+        <div class="tools-grid" id="toolGrid">
+          <article class="tool-card" data-category="explicar organizar examinar" data-search="chatgpt explicar dudas ejercicios organizar estudiar examenes">
+            <div class="tool-top">
+              <div class="tool-brand">
+                <span class="tool-logo logo-chatgpt">
+                  <img src="https://chatgpt.com/favicon.ico" alt="Logo de ChatGPT" data-fallback="◎">
+                </span>
+                <span class="tag">IA conversacional</span>
+              </div>
+            </div>
+            <h3>ChatGPT</h3>
+            <p>Explica conceptos, responde dudas, genera ejercicios y ayuda a organizar sesiones de estudio.</p>
+            <div class="tool-detail"><strong>Cómo usarlo:</strong> describe el tema, tu nivel y el tipo de ayuda que necesitas.</div>
+            <div class="tool-detail"><strong>Conviene para:</strong> comprender temas y practicar.</div>
+            <a class="tool-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a>
+          </article>
+
+          <article class="tool-card" data-category="explicar organizar" data-search="gemini explicar investigar organizar google estudiante">
+            <div class="tool-top">
+              <div class="tool-brand">
+                <span class="tool-logo logo-gemini">
+                  <img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128" alt="Logo de Gemini" data-fallback="✦">
+                </span>
+                <span class="tag">IA generativa</span>
+              </div>
+            </div>
+            <h3>Gemini</h3>
+            <p>Ayuda a investigar, explicar contenidos y resolver dudas mediante una conversación con IA.</p>
+            <div class="tool-detail"><strong>Cómo usarlo:</strong> formula una pregunta concreta y proporciona el contexto de la asignatura.</div>
+            <div class="tool-detail"><strong>Conviene para:</strong> investigación guiada y explicación de contenidos.</div>
+            <a class="tool-link" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a>
+          </article>
+
+          <article class="tool-card" data-category="explicar documentos" data-search="claude textos analizar explicar documentos escritura">
+            <div class="tool-top">
+              <div class="tool-brand">
+                <span class="tool-logo logo-claude">
+                  <img src="https://claude.ai/favicon.ico" alt="Logo de Claude" data-fallback="C">
+                </span>
+                <span class="tag">Análisis</span>
+              </div>
+            </div>
+            <h3>Claude</h3>
+            <p>Analiza información y textos extensos, y puede ayudar a desarrollar explicaciones y estructuras de trabajo.</p>
+            <div class="tool-detail"><strong>Cómo usarlo:</strong> entrega el texto o contexto y especifica qué quieres obtener.</div>
+            <div class="tool-detail"><strong>Conviene para:</strong> análisis de textos y razonamiento sobre información.</div>
+            <a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a>
+          </article>
+
+          <article class="tool-card featured" data-category="documentos examinar explicar" data-search="notebooklm pdf apuntes documentos fuentes resumen preguntas cuestionarios tarjetas">
+            <div class="featured-badge">RECOMENDADA PARA APUNTES</div>
+            <div class="tool-top">
+              <div class="tool-brand">
+                <span class="tool-logo logo-notebook">
+                  <img src="https://www.google.com/s2/favicons?domain=notebooklm.google.com&sz=128" alt="Logo de NotebookLM" data-fallback="▤">
+                </span>
+                <span class="tag">Documentos</span>
+              </div>
+            </div>
+            <h3>NotebookLM</h3>
+            <p>Trabaja sobre fuentes proporcionadas por el estudiante para resumir, consultar y generar materiales de estudio.</p>
+            <div class="tool-detail"><strong>Cómo usarlo:</strong> carga tus fuentes y formula preguntas sobre ese material.</div>
+            <div class="tool-detail"><strong>Conviene para:</strong> estudiar PDF, apuntes y material de clase.</div>
+            <a class="tool-link" href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a>
+          </article>
+
+          <article class="tool-card" data-category="presentar organizar" data-search="gamma diapositivas presentaciones pdf pptx slides exposicion">
+            <div class="tool-top">
+              <div class="tool-brand">
+                <span class="tool-logo logo-gamma">
+                  <img src="https://gamma.app/favicon.ico" alt="Logo de Gamma" data-fallback="γ">
+                </span>
+                <span class="tag">Presentaciones</span>
+              </div>
+            </div>
+            <h3>Gamma</h3>
+            <p>Crea presentaciones y documentos visuales a partir de instrucciones o contenido proporcionado por el usuario.</p>
+            <div class="tool-detail"><strong>Cómo usarlo:</strong> indica tema, público, cantidad aproximada y estructura deseada.</div>
+            <div class="tool-detail"><strong>Conviene para:</strong> crear un primer borrador de diapositivas.</div>
+            <a class="tool-link" href="https://gamma.app/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a>
+          </article>
+
+          <article class="tool-card" data-category="examinar" data-search="quizlet tarjetas estudiar examen practica preguntas aprender flashcards">
+            <div class="tool-top">
+              <div class="tool-brand">
+                <span class="tool-logo logo-quizlet">
+                  <img src="https://quizlet.com/favicon.ico" alt="Logo de Quizlet" data-fallback="Q">
+                </span>
+                <span class="tag">Repaso</span>
+              </div>
+            </div>
+            <h3>Quizlet</h3>
+            <p>Ayuda a practicar mediante tarjetas, preguntas y actividades de repaso para preparar evaluaciones.</p>
+            <div class="tool-detail"><strong>Cómo usarlo:</strong> convierte conceptos de tu materia en tarjetas y sesiones de práctica.</div>
+            <div class="tool-detail"><strong>Conviene para:</strong> memorizar, repasar y practicar.</div>
+            <a class="tool-link" href="https://quizlet.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a>
+          </article>
+
+          <article class="tool-card" data-category="presentar organizar" data-search="canva presentaciones infografias material visual diseño estudiante">
+            <div class="tool-top">
+              <div class="tool-brand">
+                <span class="tool-logo logo-canva">
+                  <img src="https://www.canva.com/favicon.ico" alt="Logo de Canva" data-fallback="C">
+                </span>
+                <span class="tag">Diseño</span>
+              </div>
+            </div>
+            <h3>Canva</h3>
+            <p>Permite crear presentaciones y materiales visuales que pueden complementar trabajos y exposiciones.</p>
+            <div class="tool-detail"><strong>Cómo usarlo:</strong> comienza con una plantilla y adapta contenido, estructura y diseño.</div>
+            <div class="tool-detail"><strong>Conviene para:</strong> presentaciones y material visual.</div>
+            <a class="tool-link" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Abrir herramienta ↗</a>
+          </article>
+        </div>
+
+        <p class="no-results" id="noResults" hidden>No se encontraron herramientas con esa búsqueda.</p>
+      </div>
+    </section>
+
+    <section class="section compare-section" id="comparativa">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">COMPARATIVA</span>
+          <h2>Funciones gratuitas, límites y planes.</h2>
+          <p>Los precios y límites pueden cambiar según país, tipo de cuenta y fecha. Revisa siempre la fuente oficial antes de pagar.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Herramienta</th>
+                <th>Gratis</th>
+                <th>Referencia actual</th>
+                <th>Uso académico principal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>ChatGPT</strong></td>
+                <td>Sí</td>
+                <td>Plus: US$20/mes. El acceso y los límites del plan gratuito pueden variar.</td>
+                <td>Explicar, practicar y organizar.</td>
+              </tr>
+              <tr>
+                <td><strong>Gemini</strong></td>
+                <td>Sí</td>
+                <td>Google AI Pro: US$19.99/mes. La disponibilidad y funciones dependen del país.</td>
+                <td>Investigar y explicar.</td>
+              </tr>
+              <tr>
+                <td><strong>Claude</strong></td>
+                <td>Sí</td>
+                <td>Pro: US$20/mes; la modalidad anual muestra un equivalente menor. Límites de uso aplican.</td>
+                <td>Analizar y redactar.</td>
+              </tr>
+              <tr>
+                <td><strong>NotebookLM</strong></td>
+                <td>Sí</td>
+                <td>Acceso estándar: 100 cuadernos, hasta 50 fuentes por cuaderno y 50 consultas de chat al día.</td>
+                <td>Estudiar documentos y fuentes.</td>
+              </tr>
+              <tr>
+                <td><strong>Gamma</strong></td>
+                <td>Sí</td>
+                <td>Free: hasta 10 diapositivas por prompt. Plus: US$9 por asiento/mes con facturación anual.</td>
+                <td>Crear presentaciones.</td>
+              </tr>
+              <tr>
+                <td><strong>Quizlet</strong></td>
+                <td>Sí</td>
+                <td>Quizlet Plus: US$35.99/año en la modalidad anual mostrada actualmente.</td>
+                <td>Repasar y practicar.</td>
+              </tr>
+              <tr>
+                <td><strong>Canva</strong></td>
+                <td>Sí</td>
+                <td>Canva Free: US$0. El precio de Pro depende de la región; la web de EE. UU. muestra US$144/año.</td>
+                <td>Presentaciones y material visual.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="source-note">
+          <strong>Fuentes oficiales:</strong>
+          <a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus" target="_blank" rel="noopener noreferrer">OpenAI</a> ·
+          <a href="https://one.google.com/about/plans" target="_blank" rel="noopener noreferrer">Google One / Gemini</a> ·
+          <a href="https://support.anthropic.com/en/articles/11049762-choosing-a-claude-ai-plan" target="_blank" rel="noopener noreferrer">Anthropic</a> ·
+          <a href="https://support.google.com/gemininotebook/answer/16269187?hl=es" target="_blank" rel="noopener noreferrer">NotebookLM</a> ·
+          <a href="https://gamma.app/pricing" target="_blank" rel="noopener noreferrer">Gamma</a> ·
+          <a href="https://quizlet.com/upgrade" target="_blank" rel="noopener noreferrer">Quizlet</a> ·
+          <a href="https://www.canva.com/pricing/" target="_blank" rel="noopener noreferrer">Canva</a>.
+          <span>Consulta: octubre de 2026.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section responsible-section">
+      <div class="container responsible-grid">
+        <div>
+          <span class="section-kicker">ÚSALA BIEN</span>
+          <h2>La IA ayuda. El aprendizaje sigue siendo tuyo.</h2>
+          <p>Utiliza estas herramientas para comprender y practicar, no solamente para obtener respuestas.</p>
+        </div>
+        <div class="responsible-list">
+          <div><span>✓</span><p><strong>Comprende:</strong> pide explicaciones, ejemplos y procedimientos.</p></div>
+          <div><span>✓</span><p><strong>Practica:</strong> genera preguntas y ejercicios antes de una evaluación.</p></div>
+          <div><span>✓</span><p><strong>Verifica:</strong> contrasta información importante con fuentes académicas.</p></div>
+          <div><span>✓</span><p><strong>Protege:</strong> evita introducir datos personales o información académica confidencial.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mini-summary">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">GUÍA RÁPIDA</span>
+          <h2>¿Cuál te conviene?</h2>
+        </div>
+        <div class="quick-grid">
+          <a href="#herramientas" data-jump-filter="explicar"><strong>No entiendo un tema</strong><span>ChatGPT · Gemini · Claude</span></a>
+          <a href="#herramientas" data-jump-filter="documentos"><strong>Tengo un PDF</strong><span>NotebookLM · Claude</span></a>
+          <a href="#herramientas" data-jump-filter="presentar"><strong>Necesito diapositivas</strong><span>Gamma · Canva</span></a>
+          <a href="#herramientas" data-jump-filter="examinar"><strong>Tengo un examen</strong><span>Quizlet · ChatGPT · NotebookLM</span></a>
+          <a href="#herramientas" data-jump-filter="organizar"><strong>Necesito organizarme</strong><span>ChatGPT · Gemini</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">📚</span>
+          <span class="brand-copy"><strong>Ayúdame con la U</strong><small>Tu aliado en cada paso</small></span>
+        </a>
+        <p>Una guía digital de recursos y oportunidades útiles para tu vida universitaria en la UES.</p>
+      </div>
+      <div>
+        <h3>Explora</h3>
+        <a href="ia.html">IA para estudiar</a>
+        <a href="recursos.html">Recursos por carrera</a>
+        <a href="beneficios.html">Promociones y beneficios</a>
+        <a href="servicios.html">Servicios universitarios</a>
+      </div>
+      <div>
+        <h3>AyudameconlaU</h3>
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto y sugerencias</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 AyudameconlaU.com · Tu aliado en cada paso.</div>
+  </footer>
+</body>
+</html>
