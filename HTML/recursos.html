@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/recursos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,39 +17,25 @@
     <a class="salto-contenido" href="#contenido">
         Saltar al contenido
     </a>
-    <header class="encabezado">
-        <div class="contenedor encabezado__interior">
-            <a href="index.html" class="marca">
-                <img src="../img/logo.png"
-                     alt="Logo de AyudameconlaU.com"
-                     class="marca__logo">
-                <span class="marca__texto">
-                    <strong>Ayudameconla<span>U</span>.com</strong>
-                    <small>Tu aliado en la vida universitaria</small>
-                </span>
-            </a>
-            <button class="menu-alternar"
-                    id="menu-alternar"
-                    aria-label="Abrir menú de navegación"
-                    aria-expanded="false"
-                    aria-controls="navegacion">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
-                <a href="index.html" class="navegacion__enlace">Inicio</a>
-                <a href="ia.html" class="navegacion__enlace">Herramientas IA</a>
-                <a href="recursos.html"
-                   class="navegacion__enlace navegacion__enlace--activo"
-                   aria-current="page">Recursos</a>
-                <a href="beneficios.html" class="navegacion__enlace">Beneficios</a>
-                <a href="servicios.html" class="navegacion__enlace">Servicios</a>
-                <a href="contacto.html" class="navegacion__enlace navegacion__enlace--contacto">Contacto</a>
-            </nav>
-        </div>
-    </header>
+   <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="marca" href="index.html" aria-label="AyudameconlaU.com, inicio">
+        <img class="marca__logo" src="../img/favicon.png" alt="Logo de AyudameconlaU.com" onerror="this.style.display='none'">
+        <span class="marca__texto"><strong>Ayúdame<span>con la U</span></strong><small>Tu aliado en cada paso</small></span>
+      </a>
+      <button class="menu-alternar" type="button" aria-label="Abrir o cerrar menú" aria-expanded="false" aria-controls="navegacion-principal">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navegacion" id="navegacion-principal" aria-label="Navegación principal">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html" aria-current="page">Inicio</a>
+        <a class="navegacion__enlace" href="ia.html">IA para estudiar</a>
+        <a class="navegacion__enlace" href="recursos.html">Recursos</a>
+        <a class="navegacion__enlace" href="beneficios.html">Promociones</a>
+        <a class="navegacion__enlace" href="servicios.html">Servicios</a>
+        <a class="navegacion__enlace navegacion__enlace--contacto" href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
     <main id="contenido">
         <section class="recursos-hero">
@@ -761,50 +748,16 @@
     </main>
 
     <footer class="pie">
-        <div class="contenedor pie__principal">
-            <div class="pie__marca">
-                <a href="index.html" class="marca marca--pie">
-                    <img src="../img/logo.png"
-                         alt=""
-                         class="marca__logo">
-
-                    <span class="marca__texto">
-                        <strong>Ayudameconla<span>U</span>.com</strong>
-                        <small>Tu aliado en la vida universitaria</small>
-                    </span>
-                </a>
-
-                <p>
-                    Un espacio pensado para acompañar a los estudiantes
-                    con recursos, herramientas y oportunidades de aprendizaje.
-                </p>
-            </div>
-
-            <div class="pie__columna">
-                <h2>Explora</h2>
-                <a href="index.html">Inicio</a>
-                <a href="ia.html">Herramientas de IA</a>
-                <a href="recursos.html">Recursos por carrera</a>
-                <a href="beneficios.html">Beneficios</a>
-            </div>
-
-            <div class="pie__columna">
-                <h2>Más información</h2>
-                <a href="servicios.html">Servicios</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="#carreras">Áreas de estudio</a>
-                <a href="#videos">Videos educativos</a>
-            </div>
-        </div>
-
-        <div class="pie__inferior">
-            <div class="contenedor pie__inferior-interior">
-                <span>© <span id="anio-actual">2026</span> AyudameconlaU.com</span>
-                <span>Aprender hoy para avanzar mañana.</span>
-            </div>
-        </div>
-    </footer>
-    <!-- JAVASCRIPT -->
+    <div class="contenedor pie__principal">
+      <div class="pie__marca">
+        <a class="marca marca--pie" href="index.html"><img class="marca__logo" src="../img/favicon.png" alt="" onerror="this.style.display='none'"><span class="marca__texto"><strong>Ayúdame<span>con la U</span></strong><small>Tu aliado en cada paso</small></span></a>
+        <p>Una guía digital de recursos y oportunidades útiles para tu vida universitaria en la UES.</p>
+      </div>
+      <div class="pie__columna"><h2>Explora</h2><a href="ia.html">IA para estudiar</a><a href="recursos.html">Recursos por carrera</a><a href="beneficios.html">Promociones y beneficios</a><a href="servicios.html">Servicios universitarios</a></div>
+      <div class="pie__columna"><h2>AyudameconlaU</h2><a href="index.html">Inicio</a><a href="contacto.html">Contacto y sugerencias</a></div>
+    </div>
+    <div class="pie__inferior"><div class="contenedor pie__inferior-interior"><span>© <span id="anio-actual">2026</span> AyudameconlaU.com</span><span>Tu aliado en cada paso.</span></div></div>
+  </footer>
     <script src="../JS/recursos.js"></script>
 </body>
 </html>

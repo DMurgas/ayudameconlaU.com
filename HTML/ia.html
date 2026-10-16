@@ -12,28 +12,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/ia.css">
+  <link rel="stylesheet" href="../CSS/general.css">
+  <link rel="icon" href="../img/favicon.png" type="image/png">
   <script src="../JS/ia.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="AyudameconlaU.com, inicio">
-        <span class="brand-mark" aria-hidden="true">📚</span>
-        <span class="brand-copy">
-          <strong>Ayúdame con la U</strong>
-          <small>Tu aliado en cada paso</small>
-        </span>
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="marca" href="index.html" aria-label="AyudameconlaU.com, inicio">
+        <img class="marca__logo" src="../img/favicon.png" alt="Logo de AyudameconlaU.com" onerror="this.style.display='none'">
+        <span class="marca__texto"><strong>Ayúdame<span>con la U</span></strong><small>Tu aliado en cada paso</small></span>
       </a>
-
-      <nav class="main-nav" aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a class="active" href="ia.html" aria-current="page">IA para estudiar</a>
-        <a href="recursos.html">Recursos</a>
-        <a href="beneficios.html">Promociones</a>
-        <a href="servicios.html">Servicios</a>
-        <a class="contact-link" href="contacto.html">Contacto</a>
+      <button class="menu-alternar" type="button" aria-label="Abrir o cerrar menú" aria-expanded="false" aria-controls="navegacion-principal">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navegacion" id="navegacion-principal" aria-label="Navegación principal">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html" aria-current="page">Inicio</a>
+        <a class="navegacion__enlace" href="ia.html">IA para estudiar</a>
+        <a class="navegacion__enlace" href="recursos.html">Recursos</a>
+        <a class="navegacion__enlace" href="beneficios.html">Promociones</a>
+        <a class="navegacion__enlace" href="servicios.html">Servicios</a>
+        <a class="navegacion__enlace navegacion__enlace--contacto" href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
@@ -366,29 +367,16 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true">📚</span>
-          <span class="brand-copy"><strong>Ayúdame con la U</strong><small>Tu aliado en cada paso</small></span>
-        </a>
+  <footer class="pie">
+    <div class="contenedor pie__principal">
+      <div class="pie__marca">
+        <a class="marca marca--pie" href="index.html"><img class="marca__logo" src="../img/favicon.png" alt="" onerror="this.style.display='none'"><span class="marca__texto"><strong>Ayúdame<span>con la U</span></strong><small>Tu aliado en cada paso</small></span></a>
         <p>Una guía digital de recursos y oportunidades útiles para tu vida universitaria en la UES.</p>
       </div>
-      <div>
-        <h3>Explora</h3>
-        <a href="ia.html">IA para estudiar</a>
-        <a href="recursos.html">Recursos por carrera</a>
-        <a href="beneficios.html">Promociones y beneficios</a>
-        <a href="servicios.html">Servicios universitarios</a>
-      </div>
-      <div>
-        <h3>AyudameconlaU</h3>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto y sugerencias</a>
-      </div>
+      <div class="pie__columna"><h2>Explora</h2><a href="ia.html">IA para estudiar</a><a href="recursos.html">Recursos por carrera</a><a href="beneficios.html">Promociones y beneficios</a><a href="servicios.html">Servicios universitarios</a></div>
+      <div class="pie__columna"><h2>AyudameconlaU</h2><a href="index.html">Inicio</a><a href="contacto.html">Contacto y sugerencias</a></div>
     </div>
-    <div class="container footer-bottom">© 2026 AyudameconlaU.com · Tu aliado en cada paso.</div>
+    <div class="pie__inferior"><div class="contenedor pie__inferior-interior"><span>© <span id="anio-actual">2026</span> AyudameconlaU.com</span><span>Tu aliado en cada paso.</span></div></div>
   </footer>
 </body>
 </html>
