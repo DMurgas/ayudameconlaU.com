@@ -463,6 +463,13 @@
     font-weight: 800;
 }
 
+.contact-team-avatar img{
+    width: 110px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .contact-team-card:nth-child(even) .contact-team-avatar {
     background: linear-gradient(135deg, #14B8A6, #2E86EB);
 }
