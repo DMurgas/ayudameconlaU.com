@@ -12,6 +12,7 @@
   <link rel="canonical" href="https://dmurgas.github.io/ayudameconlaU.com/HTML/index.html">
   <link rel="icon" type="image/png" sizes="512x512" href="../img/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <script src="../JS/principal.js"></script>
 
   <!-- Open Graph: vista previa al compartir -->
   <meta property="og:type" content="website">
@@ -228,18 +229,6 @@
   </footer>
 
   <script>
-    const botonMenu = document.querySelector('.menu-alternar');
-    const navegacion = document.querySelector('.navegacion');
-    botonMenu.addEventListener('click', () => {
-      const abierto = botonMenu.getAttribute('aria-expanded') === 'true';
-      botonMenu.setAttribute('aria-expanded', String(!abierto));
-      navegacion.classList.toggle('navegacion--abierta', !abierto);
-    });
-    navegacion.querySelectorAll('a').forEach(enlace => enlace.addEventListener('click', () => {
-      navegacion.classList.remove('navegacion--abierta');
-      botonMenu.setAttribute('aria-expanded', 'false');
-    }));
-
     const consejos = [
       'Usa las herramientas digitales como apoyo para comprender y practicar, no solo para obtener respuestas.',
       'Antes de aprovechar una promoción, revisa sus requisitos, condiciones y fecha de vigencia en la fuente oficial.',
