@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://dmurgas.github.io/ayudameconlaU.com/sitemap.xml
+Sitemap: https://dmurgas.github.io/ayudameconlaU.com/sitemap-prueba.xml
